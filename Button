@@ -1,0 +1,39 @@
+import 'package:flutter/material.dart'
+    show
+        AppBar,
+        BuildContext,
+        Center,
+        Colors,
+        Icon,
+        Icons,
+        Key,
+        Material,
+        MaterialApp,
+        Scaffold,
+        StatelessWidget,
+        Text,
+        TextButton,
+        ThemeData,
+        Widget,
+        runApp;
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Facebook"),
+        ),
+        body: Material(
+          child: Center(
+            child: TextButton.icon(
+              label: Text("Login"),
+              onPressed: () {},
+              icon: Icon(Icons.login),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
